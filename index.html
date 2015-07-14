@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Spencer Hopkins</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/helper.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+</head>
+<body>
+  <main class="container-fluid"> <!-- Main begains -->
+    <header id="header" class="row center-content clearfix"> <!-- header begains -->
+      <ul id="topContacts" class="flex-box"></ul>
+    </header> <!-- Header ends -->
+    <div style='clear: both;'></div>
+    <section id="workExperience" class="row gray"> <!-- Work section begains -->
+      <h2>Work Experience</h2>
+    </section> <!-- Work section ends -->
+    <section id="projects" class="row"> <!-- Project section begains -->
+      <h2>Projects</h2>
+    </section> <!-- Project section ends -->
+    <section id="education" class="row gray"> <!-- Education section begains -->
+      <h2>Education</h2>
+    </section> <!-- Education section ends -->
+    <section id="mapDiv" class="row"> <!-- Places section begains -->
+      <h2>Where I've Lived and Worked</h2>
+    </section> <!-- Places section ends -->
+    <div id="letsConnect" class="dark-gray">
+      <h2 class="orange center-text">Let's Connect</h2>
+      <ul id="footerContacts" class="flex-box">
+      </ul>
+    </div>
+  </main> <!-- Main ends -->
+  <script src="js/resumeBuilder.js"></script>
+  <script>
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('topContacts').style.display = 'none';
+    }
+    if(document.getElementsByTagName('h1').length === 0) {
+      document.getElementById('header').style.display = 'none';
+    }
+    if(document.getElementsByClassName('work-entry').length === 0) {
+      document.getElementById('workExperience').style.display = 'none';
+    }
+    if(document.getElementsByClassName('project-entry').length === 0) {
+      document.getElementById('projects').style.display = 'none';
+    }
+    if(document.getElementsByClassName('education-entry').length === 0) {
+      document.getElementById('education').style.display = 'none';
+    }
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('letsConnect').style.display = 'none';
+    }
+    if(document.getElementById('map') === null) {
+      document.getElementById('mapDiv').style.display = 'none';
+    }
+  </script>
+</body>
+</html>

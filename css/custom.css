@@ -1,0 +1,252 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,300italic);
+
+.clearfix {
+  overflow: auto;
+}
+
+.education-entry,
+.work-entry,
+.project-entry {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* Typography */
+.info-window-text,
+.date-text,
+.location-text {
+  color: #ff9100;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+/* info window */
+.info-window-desc{
+  color: #ff9100;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+/* Links */
+a,
+a:hover,
+a:visited {
+  color: #fa8500;
+  font-size: 17px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+}
+
+#header a {
+  display: inline-block;
+}
+
+/* Title tags */
+h1 {
+  font-size: 40px;
+  color: #234ef5;
+  line-height: 48px;
+  display: inline;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #999999;
+  line-height: 29px;
+  padding: 10px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #000000;
+  line-height: 22px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 14px;
+  color: #4A4A4A;
+  line-height: 17px;
+}
+
+h2, h3, h4, h5 {
+  padding:10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+
+.date-text {
+  float: left;
+}
+
+.location-text {
+  float: right;
+}
+
+p {
+  font-size: 16px;
+  color: #333333;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.welcome-message {
+  font-size: 18px;
+  color: #f3f3f3;
+  line-height: 24px;
+}
+
+#skillsH3 {
+  color: #000acd;
+  display: none;
+}
+
+.orange {
+  background-color: #dddddd;
+}
+
+.blue-text {
+  color: rgb(6, 0, 255);
+}
+
+.white-text {
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.gray {
+  background-color: #e4e4e4;
+  padding-bottom: 10px;
+  clear:both;
+}
+
+.dark-gray {
+  background-color: #b0ada8;
+}
+
+#header {
+  background-color: #ff9100;
+}
+
+.flex-box {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.center-content {
+  padding-top: 2.5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 2.5%
+}
+
+ul {
+  list-style-type: none;
+}
+
+.biopic {
+  float: left;
+  padding: 10px;
+  width: 200px;
+  display: none;
+  border-radius: 50%;
+}
+
+img {
+  padding: 10px;
+}
+
+/* Bar chart stuff */
+.chart div {
+  font: 10px sans-serif;
+  background-color: #4A4A4A;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  height: 12px;
+  color: white;
+  display: inline-block;
+}
+
+span {
+  padding: 5px;
+}
+
+#letsConnect {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  #letsConnect {
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width:900px) {
+  .biopic {
+    width: 175px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #letsConnect {
+    margin-top: 20%;
+  }
+  .biopic {
+    width: 150px;
+  }
+  .welcome-message {
+    display: none;
+  }
+}
+
+#map {
+  display: block;
+  height: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#mapDiv {
+  height: 400px;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+/* background colors */
+#projects {
+  background: rgb(247, 243, 237);
+}
+
+@media only screen and (min-width: 750px) {
+  #skillsH3,
+  .biopic {
+    display: block;
+  }
+}
+
+#role {
+  color: #f9f9f9;
+  font-style: oblique;
+  font-size: 18px;
+}
+
+/* Because putting this on top didn't work */
+* {
+    font-family: 'Lato', sans-serif;
+  }
+
+* {
+  text-decoration: none !important;
+}
